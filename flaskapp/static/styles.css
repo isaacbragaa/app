@@ -1,0 +1,122 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  width: 250px;
+  background-color: #343a40;
+}
+
+#page-content-wrapper {
+  flex: 1;
+  padding: 20px;
+}
+
+.container-fluid, .container {
+  padding: 20px;
+}
+
+.sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.list-group-item {
+  border: none;
+  color: #fff;
+}
+
+.list-group-item:hover {
+  background-color: #495057;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+p, ul {
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li strong {
+  color: #333;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the tooltip element */
+  left: 50%;
+  margin-left: -110px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+.btn-link {
+  color: #007bff;
+}
+
+.btn-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

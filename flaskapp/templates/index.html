@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DockerProj</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-dark border-right" id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <a href="/" class="list-group-item list-group-item-action bg-dark text-white">Home</a>
+                <a href="/cadastro" class="list-group-item list-group-item-action bg-dark text-white">Cadastro</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="navbar-brand ml-auto">DockerProj</div>
+            </nav>
+
+            <div class="container-fluid">
+                <h1 class="mt-4">Bem-vindo à DockerProj</h1>
+                <p>Na DockerProj, sabemos que microempresas e incubadoras do IFRN precisam de soluções ágeis e seguras para estabelecer sua presença online. Por isso, oferecemos um serviço especializado em implementação de sites e serviços web utilizando Docker, uma tecnologia que revolucionou a forma como as aplicações são desenvolvidas e gerenciadas.</p>
+                
+                <h2>O que é Docker?</h2>
+                <p>Docker é uma plataforma que permite empacotar aplicações e suas dependências em contêineres, garantindo que funcionem de maneira consistente em qualquer ambiente. Isso significa que, ao utilizar Docker, conseguimos:</p>
+                <ul>
+                    <li><strong>Agilidade:</strong> Implantação rápida de serviços e sites, reduzindo o tempo de espera.</li>
+                    <li><strong>Segurança:</strong> Isolamento dos aplicativos, minimizando riscos de vulnerabilidades.</li>
+                    <li><strong>Escalabilidade:</strong> Facilidade para escalar aplicações conforme a demanda.</li>
+                </ul>
+                
+                <h2>Nossos Serviços</h2>
+                <ul>
+                    <li><strong>Implantação de Sites:</strong> Criação e gerenciamento de sites responsivos e atrativos, prontos para atender às necessidades do seu negócio.</li>
+                    <li><strong>Desenvolvimento de Aplicações Web:</strong> Desenvolvimento de aplicativos sob medida, que podem ser facilmente atualizados e escalados.</li>
+                    <li><strong>Suporte e Manutenção:</strong> Garantimos que seus serviços estejam sempre disponíveis e funcionando perfeitamente, com monitoramento contínuo e suporte técnico.</li>
+                    <li><strong>Treinamento e Consultoria:</strong> Ajudamos sua equipe a entender e utilizar Docker, maximizando os benefícios dessa tecnologia.</li>
+                </ul>
+                
+                <h2>Por que Escolher a DockerProj?</h2>
+                <ul>
+                    <li><strong>Experiência:</strong> Nossa equipe é composta por profissionais experientes em desenvolvimento web e tecnologias de contêineres.</li>
+                    <li><strong>Foco no Cliente:</strong> Trabalhamos em estreita colaboração com nossos clientes para entender suas necessidades específicas e oferecer soluções personalizadas.</li>
+                    <li><strong>Compromisso com a Qualidade:</strong> Priorizamos a qualidade em cada etapa do processo, garantindo resultados que superem suas expectativas.</li>
+                </ul>
+                
+                <h2>Entre em Contato</h2>
+                <p>Se você é uma microempresa ou uma incubadora do IFRN e está pronto para dar o próximo passo na sua jornada digital, entre em contato conosco! Estamos aqui para ajudar você a crescer de forma rápida e segura.</p>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
