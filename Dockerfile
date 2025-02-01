@@ -1,14 +1,14 @@
-FROM python:3.8-slim
+# Use uma imagem base do Python
+FROM python:3.9
 
+# Defina o diretório de trabalho
 WORKDIR /app
 
-COPY flaskapp/requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+# Copie os arquivos da aplicação
+COPY . /app
 
-COPY flaskapp /app/flaskapp
-COPY flaskapp/init_db.py /app/init_db.py
-COPY flaskapp/schema.sql /app/schema.sql
+# Instale as dependências
+RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 5000
-
-CMD ["flask", "run", "--host=0.0.0.0"]
+# Execute o script de inicialização do banco de dados e inicie o servidor Flask
+CMD ["sh", "-c", "python init_db.py && flask run --host=0.0.0.0"]
