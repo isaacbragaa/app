@@ -7,12 +7,13 @@ services:
       - "20.151.234.53:6567:5000"
     volumes:
       - ./flaskapp:/app/flaskapp
+      - ./data:/app/data  # Add volume for SQLite3 database
     environment:
       FLASK_ENV: development
-      FLASK_APP: flaskapp/app.py  # Adicione esta linha
+      FLASK_APP: flaskapp/app.py
     command: >
       sh -c "python init_db.py && flask run --host=0.0.0.0"
-
+      
   nginx:
     image: nginx:latest
     ports:
