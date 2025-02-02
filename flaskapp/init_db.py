@@ -10,7 +10,7 @@ def init_db():
             email TEXT NOT NULL,
             sinopse TEXT NOT NULL,
             tipo TEXT NOT NULL,
-            telefone TEXT NOT NULL
+            
         )
     ''')
     conn.commit()
