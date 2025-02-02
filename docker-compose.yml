@@ -7,7 +7,7 @@ services:
       - "20.151.234.53:6567:5000"
     volumes:
       - ./flaskapp:/app/flaskapp
-      - ./data:/app/data  # Adicione volume para o banco de dados SQLite3
+      - ./data:/app/data  
     environment:
       FLASK_ENV: development
       FLASK_APP: flaskapp/app.py
